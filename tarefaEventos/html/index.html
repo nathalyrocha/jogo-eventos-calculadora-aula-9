@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Eventos</title>
+    <meta charset="utf-8">
+    <script src="../js/script.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  </head>
+
+  <body id="fundo">
+    <div class="container">
+      <div class="row">
+        <button onclick="cumprimentar()">Cumprimentar</button>
+        <button onclick="mudarFundo()">Alterar Fundo</button>
+      </div>
+  
+      <div class="row">
+        <img onmouseover="passarMouse()" src="../images/nathy.jpg" alt="imagem de uma mulher" />
+        <img id="img-click" src="../images/rex.jpeg" alt="imagem de um cachorro" />
+      </div>
+  
+      <form>
+        <section id="dados-pessoais">
+          <p class="subtitle">Dados pessoais:</p>
+          
+          <input 
+            class="dados-formulario" 
+            type="text" 
+            name="usuário" 
+            placeholder=" Nome" 
+          />
+          <input 
+            class="dados-formulario" 
+            type="text" 
+            name="usuário" 
+            placeholder=" Sobrenome" 
+          />
+          <input 
+            class="dados-formulario" 
+            type="email" 
+            name="usuário" 
+            placeholder=" contato@example.com" 
+          />
+        </section>
+  
+        <section id="genero">
+          <p class="subtitle">Gênero:</p>
+  
+          <ul>
+            <li>Feminino<input type="radio" name="genero" value="Feminino" /></li>
+            <li>Masculino<input type="radio" name="genero" value="Masculino" /></li>
+            <li>Prefiro não responder<input type="radio" name="genero" value="Nulo" /></li>
+          </ul>
+        </section>
+  
+        <section id="assunto-mensagem">
+          <p class="subtitle">Assunto da mensagem:</p>
+  
+          <select id="select" name="país">
+            <optgroup label="Assunto da mensagem">
+              <option value="musica">Música</option>
+              <option value="jogos">Jogos</option>
+              <option value="cultura">Cultura</option>
+            </optgroup>
+          </select>
+        </section>
+  
+        <section id="comentarios">
+          <p class="subtitle">Comentários:</p>
+          
+          <textarea 
+            rows="4" 
+            cols="50" 
+            name="mensagem" 
+            style="resize: none;"
+            placeholder=" Escreva seu comentário aqui..."
+          ></textarea>
+  
+          <button class="button-contact" type="button" onclick="impossivelEnviar()">Enviar</button>
+
+          <a href="https://google.com" target="_blank">Ir para o google</a>
+        </section>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  background-image: linear-gradient(#ffffffb9, #ffffffb9), url("../imagens/ceu.jpg");
+  object-fit: cover;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 150px;
+}
+
+#section-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#title-jogo {
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 55px;
+  text-align: center;
+  margin-right: 20px;
+}
+
+
+#title-nivel {
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  margin: 20px 0;
+  width: 300px;
+}
+
+#nivelJogo {
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 18px;
+  border: 1.5px solid black;
+  border-radius: 5px;
+  background-color: #ffffff00;
+  padding: 5px;
+}
+
+#img-nivel {
+  width: 200px;
+}
+
+#img-nivel:hover {
+  opacity: 80%;
+}
+
+#container-tables {
+  font-family: 'Roboto Slab', sans-serif;
+  display: flex;
+  justify-content: space-around;
+  width: 730px;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 50px;
+  border: 2px dotted darkblue;
+  border-radius: 10px;
+}
+
+.baloes {
+  font-size: 40px;
+}
+
+#img-cronometro {
+  background: url('../imagens/cronometro.png'); 
+  border-radius: 30px;
+  width: 135px; 
+  height: 130px;
+  text-align: center;
+}
+
+#cronometro {
+  color: red; 
+  font-size: 30px;
+}
+
+#cenario {
+  width: 730px; 
+  height: 500px; 
+  background-image: url('../imagens/paisagem.png'); 
+  border-radius: 0 0 10px 10px;
+}
